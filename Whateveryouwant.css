@@ -1,0 +1,14 @@
+header {
+    background-color: ivory;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+}
+h1, footer {
+    color: navy;
+    background-color: lightblue;
+}
+footer {
+    text-align: right;
+}
