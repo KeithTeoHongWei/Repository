@@ -1,6 +1,7 @@
 body {
     background-color: ivory;
     text-align: left;
+    margin: 0;
 }
 #contact {
     text-align: right;
@@ -11,4 +12,10 @@ body {
 h1, #contact {
     background-color: wheat;
     color: dimgray;
+}
+h1 {
+    position: relative;
+}
+h2 {
+    position: relative;
 }
