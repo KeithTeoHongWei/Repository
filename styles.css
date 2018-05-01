@@ -3,47 +3,90 @@
    Filename: styles.css
 
    Author:   Keith Teo Hong Wei
-   Date:     29//4/2018
+   Date:     30//4/2018
    HTML5 and CSS3 Illustrated Unit D, Visual Workshop
  */
 
+/* reset styles */
+html{
+  font-size: 12px;
+}
+article, body, div, footer, header, h1, h2, p {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+p{
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
 /* body and page container */
-body {
-    background-color: floralwhite;
-    border: 0.25em solid navy;
-    margin: 0 20em;
- }
- .container {
-    background-color: burlywood;
- }
- 
- /* headings */
- header {
-    text-align: center;
-    color: navy;
-    background-color: lightblue;
-    padding: 0.1em 0;
- }
- 
- /* main content */
- article {
-    background-color: white;
-    float: right;
-    padding: 0 15em 0 1em;
- }
- 
- /* sidebar */
- aside {
-    background-color: burlywood;
-    padding: 0.5em 0 0 2em;
-    width: 13em;
- }
- 
- /* footer section */
- footer {
-    color: navy;
-    background-color: lightblue;
-    text-align: right;
-    clear: right;
-    padding: 0.1em 1em;
- }
+body div.container {
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  background-color: rgb(212, 114, 75);
+  box-shadow: 0 0 2em black;
+}
+
+/* headings */
+header {
+  padding: 0.5em;
+  text-align: center;
+  font-family: Bitter, 'Times New Roman', Times, serif;
+  font-size: 1.9em;
+  background-color: lightblue;
+  text-shadow: 0.1em 0.1em 0.1em rgb(198, 156, 109)
+}
+
+/* main content */
+article {
+  width: 62%;
+  padding: 0.5%;
+  float: left;
+  background-color: white;
+  position: relative;
+  left: 1.3em;
+  top: 1.3em;
+  box-shadow: 0.1em 0.1em 0.5em black;
+}
+/*article div.container {
+  padding: 2%;
+  background-color: white;
+}*/
+article h2 {
+  margin-bottom: 0.4em;
+  font-family: Bitter, 'Times New Roman', Times, serif;
+  font-size: 2.4em;
+  text-shadow: 0.1em 0.1em 0.1em rgb(198, 156, 109)
+}
+article p {
+  margin: 0 0 0.8em 1em;
+  font-size: 1.6em;
+}
+.accent{
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.1em rgb(198, 156, 109)
+}
+/* sidebar */
+aside {
+  width: 28%;
+  height: 25.5em;
+  padding: 2%;
+  float: right;
+  background-color: white;
+}
+aside p {
+  padding: 0.4em;
+  margin-bottom: 0.6em;
+  font-size: 1.7em;
+}
+
+/* footer section */
+footer {
+  padding: 0.5em;
+  clear: both;
+  text-align: right;
+  background-color: lightblue;
+}
