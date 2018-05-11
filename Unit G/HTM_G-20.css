@@ -11,7 +11,7 @@
 html {
    font-size: 12px;
 }
-article, body, div, footer, header, h1, h2, img, nav, p {
+article, body, div, figure, footer, header, h1, h2, img, nav, p {
    border: 0;
    padding: 0;
    margin: 0;
@@ -21,6 +21,7 @@ article, body, div, footer, header, h1, h2, img, nav, p {
 body {
    font-family: Verdana, Geneva, sans-serif;
    background-color: rgb(253,245,230);
+   background: url("images/books.png");
 }
 .container {
    max-width: 800px;
@@ -109,6 +110,11 @@ article p {
 }
 article span {
    font-weight: bold;
+}
+article figure {
+  max-width: 100%;
+  margin-left: 2em;
+  float: right;
 }
 
 /* sidebar */
