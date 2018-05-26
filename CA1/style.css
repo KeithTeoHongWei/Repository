@@ -154,7 +154,7 @@ article figure {
 }
 article figcaption {
   font-size: 1.5em;
-  margin-bottom: 1em;
+  margin: 0.5em 0;
 }
 
 /* sidebar */
