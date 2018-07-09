@@ -2,8 +2,8 @@
    Revisions Bookstore and Cafe style sheet 
    Filename: styles.css
 
-   Author:   Keith Teo Hong Wei
-   Date:     2 July 2018
+   Author:   
+   Date:     
    HTML5 and CSS3 Illustrated Unit I, Visual Workshop
  */
 
@@ -24,6 +24,7 @@ img {
 }
 ul {
    list-style-type: none;
+   display: none;
 }
 table {
    border-collapse: collapse;
@@ -55,7 +56,7 @@ p.skipnavigation a:focus {
 
 /* header section */
 header {
-   width: 80%;
+   width: 98%;
    min-height: 60px;
    padding: 0 1%;
    text-align: left;
@@ -63,7 +64,6 @@ header {
    font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
    font-weight: 900;
    overflow: auto;
-   float: left;
 }
 header h1 {
    margin-right: 65px;
@@ -79,17 +79,11 @@ header img {
 
 /* site navigation */
 nav.sitenavigation {
-   width: 18%;
-   padding: 5% 1%;
-   color: #34180f;
-   float: right;
    background-color: black;
-   position: relative;
+   position: absolute; 
    top: 0;
    right: 0;
-}
-div.navigation-menu-button {
-  float: right;
+   padding: 5px;
 }
 nav.sitenavigation a:link {
    text-decoration: none;
@@ -107,13 +101,10 @@ nav.sitenavigation a:active {
    top: 1px;
    left: 1px;
 }
-nav.sitenavigation ul {
-  border: 3px solid #34180f;
-  display: none;
-  background-color: #B8944D;
-  position: absolute;
-  right: 5%;
-  top: 70%;
+.navigation-menu-button {
+  display: block;
+}
+nav.sitenavigation {
   z-index: 2;
 }
 
@@ -140,15 +131,9 @@ article p {
    margin: 0 0 0.8em 1em;
    font-size: 1.2em;
 }
-section p:first-of-type {
+figure {
+  float: right;
   display: none;
-}
-.top-link a {
-  padding: 3px 6px;
-  border: 2px solid #777;
-  display: inline-block;
-  background-color: #ebf8fa;
-  border-radius: 0.6em;
 }
 
 /* sidebar */
@@ -170,6 +155,51 @@ footer {
    background-color: #bdccd4;
 }
 
+@media screen and (min-width: 800px){
+  div.navigation-menu-button {
+    display: none;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+  }
+  nav.sitenavigation {
+    position: relative;
+  }
+  article{
+    width: 60%;
+  }
+  aside {
+    display: block;
+    position: relative;
+    left: 1em;
+  }
+  div.logo{
+    display: block;
+    position: relative;
+    float: left;
+    left: 5%;
+  }
+  h1 {
+    float: right;
+    margin: 2%;
+  }
+  figure {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  figure {
+    display: block;
+    width: 52%;
+  }
+}
+
 /* print styles */
 @media print {
    body, h1, article, footer {
@@ -187,82 +217,6 @@ footer {
    .top-link {
       display: none;
    }
-}
-/* small screen/tablet styles */
-@media screen and (min-width: 460px), print {
-  article{
-    padding: 2%;
-  }
-  figure {
-    border: 1px solid #ccc;
-    padding: 2%;
-    box-shadow: 0 10px 6px -6px #777;
-    display: inline-block;
-  }
-  section {
-    text-align: center;
-  }
-  section h3, section p {
-    text-align: left;
-  }
-  section p:first-of-type {
-    display: block;
-  }
-}
-/* standard screen styles */
-@media screen and (min-width: 880px) {
-  header {
-    float: none;
-    width: auto;
-  }
-  div.navigation-menu-button {
-    display: none;
-  }
-  nav.sitenavigation {
-    width: 100%;
-    padding: 0;
-  }
-  nav.sitenavigation ul{
-    border: none;
-    width: 100%;
-    display: block;
-    position: static;
-    text-align: center;
-  }
-  nav.sitenavigation li {
-    display: inline-block;
-  }
-  h3 {
-    float: left;
-  }
-  figure {
-    float: right;
-    max-width: 50%;
-    margin: 2% 0 2% 2%;
-  }
-  section {
-    padding-bottom: 2%;
-  }
-  .top-link {
-    right: auto;
-    left: 0;
-  }
-}
-/* large screen styles */
-@media screen and (min-width: 1060px) {
-  figure {
-    margin: 2% 25% 2% 2%;
-  }
-  .top-link {
-    left: auto;
-    right: 0;
-  }
-}
-/* maximum width screen styles */
-@media screen and (min-width: 1400px) {
-  article div {
-    width: 1260px; /* 1400 * 90% */
-  }
 }
 @page {
    margin: 0.75in;
