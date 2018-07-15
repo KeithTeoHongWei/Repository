@@ -166,7 +166,7 @@ legend {
   position: absolute;
   left: 7em;
 }
-#nameinput, #emailinput {
+#firstname, #lastname, #emailinput {
   width: 17em;
 }
 #phoneinput {
