@@ -47,7 +47,7 @@ p.skipnavigation a:focus {
 
 /* header section */
 header {
-   padding: 21em 0;
+   padding: 20em 0;
    text-align: center;
    background: url("images/myself.jpg");
    background-size: auto;
@@ -98,14 +98,14 @@ nav.sitenavigation a:visited {
    color: #c6e2f1;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-   color: rgb(37, 37, 37);
+   color: rgb(255, 255, 255);
    font-weight: bold;
-   background-color: rgb(238, 196, 132);
+   background-color: rgb(75, 110, 156);
    padding: 0.6em 0.8em 0.2em;
    border-radius: 0.5em;
 }
 nav.sitenavigation a:active {
-  background-color: rgb(173, 122, 44);
+  background-color: rgb(77, 69, 189);
   padding: 0.8em 0.7em 0.2em;
   font-size: 0.9em;
 }
