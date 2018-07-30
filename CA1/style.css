@@ -6,200 +6,199 @@
 
 /* reset styles */
 html {
-   font-size: 12px;
+  font-size: 12px;
 }
 article, body, div, figure, footer, header, h1, h2, img, nav, p {
-   border: 0;
-   padding: 0;
-   margin: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* body and page container */
 body {
-   font-family: Verdana, Geneva, sans-serif;
-   background-color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 body figure{
-  position: fixed;
-  margin: 2em;
+ position: fixed;
+ margin: 2em;
 }
 /*.container {
-   max-width: 1000px;
-   margin: 0 auto;
-   background-color: white;
-   position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
 }*/
 p {
-   font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 /* skip navigation link */
 /*p.skipnavigation a {
-   position: absolute;
-   left: -10000px;
+  position: absolute;
+  left: -10000px;
 }
 p.skipnavigation a:focus {
-   left: 1em;
-   top: 1em;
-   background-color: white;
-   color: black;
+  left: 1em;
+  top: 1em;
+  background-color: white;
+  color: black;
 }*/
 
 /* header section */
 header {
-   padding: 20em 0;
-   text-align: center;
-   background: url("images/myself.jpg");
-   background-size: auto;
-   background-attachment: fixed;/*makes the background fit the whole screen regardless of the zoom of the page and fixed it in place to have the scrolling effect*/
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-   font-weight: 900;
-   overflow: auto;
+  padding: 21em 0;
+  text-align: center;
+  background: url("images/myself.jpg");
+  background-size: auto;
+  background-attachment: fixed;/*makes the background fit the whole screen regardless of the zoom of the page and fixed it in place to have the scrolling effect*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+  overflow: auto;
 }
 header h1 {
-   width: 100%;
-   margin-top: 1%;
-   font-size: 4em;
-   color: rgb(255, 255, 255);
-   text-shadow: 4px 4px 15px rgb(0, 0, 0);
-   text-transform: uppercase;
-   letter-spacing: 3px;
+  width: 100%;
+  margin-top: 1%;
+  font-size: 4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 2px rgb(10, 0, 100);
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 header h1:first-letter{
-  font-size: 1.8em;
+ font-size: 1.8em;
 }
 
 /* site navigation */
 nav.sitenavigation {
-   background-color: rgb(31, 52, 109);
-   overflow: auto;
+  background-color: rgb(31, 52, 109);
+  overflow: auto;
 }
 nav.sitenavigation div {
-   width: 100%;
-   text-align: center;
+  width: 100%;
+  text-align: center;
 }
 nav.sitenavigation p {
-   margin: 0 0.3em;
-   padding: 0.1em;
-   display: inline-block;
-   font-size: 2em;
+  margin: 0 0.3em;
+  padding: 0.1em;
+  display: inline-block;
+  font-size: 2em;
 }
 nav.sitenavigation p:first-letter {
-  font-size: 1.5em;
+ font-size: 1.5em;
 }
 nav.sitenavigation a:link {
-   text-decoration: none;
-   color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 nav.sitenavigation a:visited {
-   color: #c6e2f1;
+  color: #c6e2f1;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   background-color: rgb(75, 110, 156);
-   padding: 0.6em 0.8em 0.2em;
-   border-radius: 0.5em;
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  background-color: rgb(238, 196, 132);
+  padding: 0.6em 0.8em 0.2em;
 }
 nav.sitenavigation a:active {
-  background-color: rgb(77, 69, 189);
-  padding: 0.8em 0.7em 0.2em;
-  font-size: 0.9em;
+ background-color: rgb(173, 122, 44);
+ padding: 0.8em 0.7em 0.2em;
+ font-size: 0.9em;
 }
 
 /* main content */
 article {
-   width: 70%;
-   padding: 3%;
-   float: left;
-   background: url("images/physics background.jpg"); /*https://www.dreamstime.com/stock-illustration-seamless-illustration-topic-physics-dark-outline-white-background-pattern-formulas-graphs-equipment-as-image73140356*/
-   background-size: auto;
+  width: 70%;
+  padding: 3%;
+  float: left;
+  background: url("images/physicsbackground.jpg"); /*https://www.dreamstime.com/stock-illustration-seamless-illustration-topic-physics-dark-outline-white-background-pattern-formulas-graphs-equipment-as-image73140356*/
+  background-size: auto;
 }
 article div.container {
-   padding: 1%;
-   background-color: rgb(255, 245, 239);
-   overflow: auto;
-   border: 1px solid rgb(0, 0, 0);
-   border-radius: 50px;
+  padding: 1%;
+  background-color: rgb(255, 245, 239);
+  overflow: auto;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
 }
 article h2 {
-   margin: 0.5em 0 1em 1em;
-   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-   font-weight: 900;
-   font-size: 2.5em;
-   text-transform: capitalize;
+  margin: 0.5em 0 1em 1em;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: capitalize;
 }
 article h2:first-letter{
-  font-size: 1.5em;
+ font-size: 1.5em;
 }
 article p {
-   max-width: 80%;
-   margin: 1.5em 1em 0.8em 4em;
-   font-size: 1.7em;
-   line-height: 1.2em;
+  max-width: 80%;
+  margin: 1.5em 1em 0.8em 4em;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 article p:first-letter{
-  font-size: 1.2em;
+ font-size: 1.2em;
 }
 article span {
-   font-weight: bold;
-   font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 article figure {
-  max-width: 100%;
-  margin: 3em 0 0 10%;
-  position: relative;
+ max-width: 100%;
+ margin: 3em 0 0 10%;
+ position: relative;
 }
 article figcaption {
-  font-size: 1.5em;
-  margin: 0.5em 0;
+ font-size: 1.5em;
+ margin: 0.5em 0;
 }
 
 /* sidebar */
 aside {
-   margin: 1em 4% 0 0;
-   width: 19%;
-   float: right;
-   border: 1px solid rgb(0, 0, 0);
+  margin: 1em 4% 0 0;
+  width: 19%;
+  float: right;
+  border: 1px solid rgb(0, 0, 0);
 }
 aside p {
-   padding: 0.4em;
-   margin-bottom: 0.3em;
-   font-size: 2em;
-   color: rgb(0, 0, 0);
+  padding: 0.4em;
+  margin-bottom: 0.3em;
+  font-size: 2em;
+  color: rgb(0, 0, 0);
 }
 aside a{
-  text-decoration: none;
+ text-decoration: none;
 }
 
 /* footer section */
 footer {
-  float: right;
-  background-color: rgb(31, 52, 109);
-  padding: 1em 5em 1em 310em; 
+ float: right;
+ background-color: rgb(31, 52, 109);
+ padding: 1em 5em 1em 310em; 
 }
 footer h2{
-  color: rgb(255, 197, 158);
+ color: rgb(255, 197, 158);
 }
 footer p{
-  color: rgb(255, 255, 255);
+ color: rgb(255, 255, 255);
 }
 
 /* print styles */
 @media print {
-   body, h1, article, footer {
-      background-color: rgb(255,255,255);
-   }
-   body {
-      max-width: 100%;
-   }
-   nav {
-      display: none;
-   }
+  body, h1, article, footer {
+     background-color: rgb(255,255,255);
+  }
+  body {
+     max-width: 100%;
+  }
+  nav {
+     display: none;
+  }
 }
 @page {
-   margin: 0.75in;
+  margin: 0.75in;
 }
