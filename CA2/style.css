@@ -84,7 +84,7 @@ nav.sitenavigation div {
 nav.sitenavigation p {
    margin: 0 0.3em;
    padding: 0.1em;
-   display: inline-block;
+   display: none;
    font-size: 2em;
 }
 nav.sitenavigation p:first-letter {
@@ -109,10 +109,13 @@ nav.sitenavigation a:active {
   padding: 0.8em 0.7em 0.2em;
   font-size: 0.9em;
 }
+.navigation-menu-button {
+  display: block;
+}
 
 /* main content */
 article {
-   width: 70%;
+   width: 93%;
    padding: 3%;
    float: left;
    background: url("images/physicsbackground.jpg"); /*https://www.dreamstime.com/stock-illustration-seamless-illustration-topic-physics-dark-outline-white-background-pattern-formulas-graphs-equipment-as-image73140356*/
@@ -150,7 +153,7 @@ article span {
 }
 article figure {
   max-width: 100%;
-  margin: 3em 0 0 10%;
+  margin: 3em 1em 0 10%;
   position: relative;
 }
 article figcaption {
@@ -160,7 +163,8 @@ article figcaption {
 
 /* sidebar */
 aside {
-   margin: 1em 4% 0 0;
+  display: none;
+   margin: 1em 2% 0 0;
    width: 19%;
    float: right;
    border: 1px solid rgb(0, 0, 0);
@@ -199,6 +203,22 @@ footer p{
    nav {
       display: none;
    }
+}
+@media screen and (min-width: 1200px) {
+  aside {
+    display: block;
+  }
+  article {
+    width: 70%
+  }
+}
+@media screen and (min-width: 950px) {
+  nav.sitenavigation p {
+    display: inline-block;
+  }
+  div.navigation-menu-button {
+    display: none;
+  }
 }
 @page {
    margin: 0.75in;
