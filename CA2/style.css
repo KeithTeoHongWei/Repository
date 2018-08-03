@@ -21,7 +21,12 @@ body {
 }
 body figure{
   position: fixed;
-  margin: 2%;
+  margin: 1%;
+}
+.logo{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 p {
    font-size: 150%;
@@ -30,7 +35,7 @@ p {
 /* header section */
 header {
   max-width: 100%;
-   padding: 1% 5%;
+   padding: 18%;
    text-align: center;
    background: url("images/myself.jpg");
    background-size: auto;
@@ -45,7 +50,7 @@ header {
 header h1 {
    width: 100%;
    margin-top: 1%;
-   font-size: 200%;
+   font-size: 350%;
    color: rgb(255, 255, 255);
    text-shadow: 4px 4px 15px rgb(0, 0, 0);
    text-transform: uppercase;
@@ -61,13 +66,13 @@ nav.sitenavigation {
    overflow: auto;
 }
 nav.sitenavigation div {
-   width: 100%;
+   width: auto;
    text-align: center;
 }
 nav.sitenavigation p {
    margin: 0 0.3em;
    padding: 0.1em;
-   display: none;
+   display: inline-block;
    font-size: 2em;
 }
 nav.sitenavigation p:first-letter {
@@ -93,7 +98,10 @@ nav.sitenavigation a:active {
   font-size: 0.9em;
 }
 .navigation-menu-button {
-  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: none;
 }
 
 /* main content */
@@ -169,33 +177,53 @@ footer p{
       display: none;
    }
 }
-@media screen and (min-width: 1200px) {
-  responsive {
-    width: 100%;
-    height: auto;
-  }
-  header {
-    padding: 18%;
-  }
+@media screen and (max-width: 1200px) {
   header h1 {
-    font-size: 350%;
-}
-@media screen and (min-width: 950px) {
-  nav.sitenavigation p {
-    display: inline-block;
+    font-size: 300%;
   }
-  div.navigation-menu-button {
+}
+@media screen and (max-width: 1050px){
+  header h1 {
+    font-size: 250%;
+  }
+  nav.sitenavigation {
+    background-color: rgb(31, 52, 109);
+    overflow: auto;
+  }
+  nav.sitenavigation p {
+    font-size: 180%;
+ }
+}
+@media screen and (max-width: 950px) {
+  header{
+    padding: 5%;
+  }
+  nav.sitenavigation {
+    background-color: rgb(31, 52, 109);
+    overflow: auto;
+  }
+  nav.sitenavigation div {
+    width: auto;
+    text-align: left;
+    padding: 0 1%;
+ }
+  nav.sitenavigation p {
     display: none;
   }
-  responsive {
-    width: 100%;
-    max-width: 40px;
-    height: auto;
+  div.navigation-menu-button {
+    display: block;
   }
 }
-@media screen and (min-width: 480px) {
-
+@media screen and (max-width: 620px){
+  header {
+    padding: 2%;
+  }
+  header h1 {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 480px) {
 }
 @page {
-   margin: 0.75in;}
+   margin: 0.75in;
 }
