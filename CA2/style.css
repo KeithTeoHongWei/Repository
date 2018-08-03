@@ -6,7 +6,7 @@
 
 /* reset styles */
 html {
-   font-size: 12px;
+   font-size: 80%;
 }
 article, body, div, figure, footer, header, h1, h2, img, nav, p {
    border: 0;
@@ -21,33 +21,16 @@ body {
 }
 body figure{
   position: fixed;
-  margin: 2em;
+  margin: 2%;
 }
-/*.container {
-   max-width: 1000px;
-   margin: 0 auto;
-   background-color: white;
-   position: relative;
-}*/
 p {
-   font-size: 1.4em;
+   font-size: 150%;
 }
-
-/* skip navigation link */
-/*p.skipnavigation a {
-   position: absolute;
-   left: -10000px;
-}
-p.skipnavigation a:focus {
-   left: 1em;
-   top: 1em;
-   background-color: white;
-   color: black;
-}*/
 
 /* header section */
 header {
-   padding: 20em 0;
+  max-width: 100%;
+   padding: 1% 5%;
    text-align: center;
    background: url("images/myself.jpg");
    background-size: auto;
@@ -62,14 +45,14 @@ header {
 header h1 {
    width: 100%;
    margin-top: 1%;
-   font-size: 4em;
+   font-size: 200%;
    color: rgb(255, 255, 255);
    text-shadow: 4px 4px 15px rgb(0, 0, 0);
    text-transform: uppercase;
    letter-spacing: 3px;
 }
 header h1:first-letter{
-  font-size: 1.8em;
+  font-size: 150%;
 }
 
 /* site navigation */
@@ -97,7 +80,7 @@ nav.sitenavigation a:link {
 nav.sitenavigation a:visited {
    color: #c6e2f1;
 }
-nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+nav.sitenavigation a:hover, nav.sitenavigation a:focus, .current {
    color: rgb(255, 255, 255);
    font-weight: bold;
    background-color: rgb(75, 110, 156);
@@ -115,33 +98,30 @@ nav.sitenavigation a:active {
 
 /* main content */
 article {
-   width: 93%;
-   padding: 3%;
-   float: left;
+   max-width: 100%;
+   padding: 4%;
    background: url("images/physicsbackground.jpg"); /*https://www.dreamstime.com/stock-illustration-seamless-illustration-topic-physics-dark-outline-white-background-pattern-formulas-graphs-equipment-as-image73140356*/
-   background-size: auto;
 }
 article div.container {
    padding: 1%;
    background-color: rgb(255, 245, 239);
-   overflow: auto;
    border: 1px solid rgb(0, 0, 0);
    border-radius: 50px;
 }
 article h2 {
-   margin: 0.5em 0 1em 1em;
+   margin: 1% 0 1% 2%;
    font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
    font-weight: 900;
-   font-size: 2.5em;
+   font-size: 240%;
    text-transform: capitalize;
 }
 article h2:first-letter{
-  font-size: 1.5em;
+  font-size: 130%;
 }
 article p {
-   max-width: 80%;
-   margin: 1.5em 1em 0.8em 4em;
-   font-size: 1.7em;
+   max-width: 100%;
+   margin: 1% 2% 1% 5%;
+   font-size: 150%;
    line-height: 1.2em;
 }
 article p:first-letter{
@@ -152,43 +132,28 @@ article span {
    font-size: 1.2em;
 }
 article figure {
-  max-width: 100%;
-  margin: 3em 1em 0 10%;
+  margin: 2% 0 1% 5%;
   position: relative;
 }
 article figcaption {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-
-/* sidebar */
-aside {
-  display: none;
-   margin: 1em 2% 0 0;
-   width: 19%;
-   float: right;
-   border: 1px solid rgb(0, 0, 0);
-}
-aside p {
-   padding: 0.4em;
-   margin-bottom: 0.3em;
-   font-size: 2em;
-   color: rgb(0, 0, 0);
-}
-aside a{
-  text-decoration: none;
+  font-size: 100%;
+  margin: 1% 0;
 }
 
 /* footer section */
 footer {
   float: right;
   background-color: rgb(31, 52, 109);
-  padding: 1em 5em 1em 310em; 
+  padding: 1% 15% 1% 100%;
 }
 footer h2{
+  font-size: 120%;
   color: rgb(255, 197, 158);
 }
 footer p{
+  font-size: 90%;
+  background-color: red;
+  width: 140%;
   color: rgb(255, 255, 255);
 }
 
@@ -205,12 +170,15 @@ footer p{
    }
 }
 @media screen and (min-width: 1200px) {
-  aside {
-    display: block;
+  responsive {
+    width: 100%;
+    height: auto;
   }
-  article {
-    width: 70%
+  header {
+    padding: 18%;
   }
+  header h1 {
+    font-size: 350%;
 }
 @media screen and (min-width: 950px) {
   nav.sitenavigation p {
@@ -219,6 +187,14 @@ footer p{
   div.navigation-menu-button {
     display: none;
   }
+  responsive {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+
 }
 @page {
    margin: 0.75in;
