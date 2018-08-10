@@ -9,39 +9,47 @@
          Author:   Keith Teo Hong Wei
       -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/keithlogo.jpg">
 </head>
 
 <body>
     <figure class="logo">
-        <img src="images/keithlogo.jpg" alt="logo" width="5%">
+        <img src="images/keithlogo.jpg" alt="logo" width="100%">
     </figure>
     <div class="container">
-        <!--<p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>-->
         <header>
             <h1>Keith&#39;s Personal Website</h1>
         </header>
-        <nav class="sitenavigation">
+        <nav class="sitenavigation" id="myTopnav">
             <div class="navigation-menu-button">
-                <img src="images/menu.png" alt="Show navigation" width="5%">
+                <img src="images/menu.png" alt="Show navigation" width="100%" onclick="menu()">
             </div>
-            <div>
-                <p class="current">
-                    <a href="index.html">Introduction</a>
-                </p>
-                <p>
-                    <a href="educationalbackground.html">Educational Background</a>
-                </p>
-                <p>
-                    <a href="importanteventsorpeople.html">Important Events/People</a>
-                </p>
-                <p>
-                    <a href="portfolio.html">Portfolio</a>
-                </p>
-            </div>
+            <ul>
+                <li class="current">
+                    <a href="index.html">
+                        <i class="fa fa-fw fa-home"></i> Introduction</a>
+                </li>
+                <li class="myLinks">
+                    <a href="educationalbackground.html">
+                        <i class="fa fa-book"></i> Educational Background</a>
+                </li class="myLinks">
+                <li>
+                    <a href="importanteventsorpeople.html">
+                        <i class="fa fa-user-plus"></i> Important Events/People</a>
+                </li class="myLinks">
+                <li>
+                    <a href="portfolio.html">
+                        <i class="fa fa-file-text"></i> Portfolio</a>
+                </li class="myLinks">
+                <li>
+                    <a href="signup.html">
+                        <i class="fa fa-fw fa-user"></i> Join our team</a>
+                </li>
+            </ul>
         </nav>
         <article>
             <div class="container">
@@ -51,23 +59,70 @@
                 <p>I was born in the year 2000 in a beautiful country called
                     <span>Singapore</span>.</p>
                 <p>I am from a family of 4, my 2 parents and a younger sister, 2 years younger than me.</p>
-                <figure>
-                    <!--link to instagram-->
-                    <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
-                        <img src="images/familypic.jpg" alt="my family" class="responsive">
-                    </a>
-                    <figcaption>Figure 1: My Family</figcaption>
+                <figure class="images">
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/familypic.jpg" alt="family" class="responsive">
+                        </a>
+                        <div class="text">That is my family plus my grandfather</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/pearlyn.jpg" alt="pearlyn" class="responsive">
+                        </a>
+                        <div class="text">Sister, not taken, hit her up</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/nic.jpg" alt="nicholas" class="responsive">
+                        </a>
+                        <div class="text">One of my close friends, Nicholas</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/mountain.jpg" alt="gunung datuk" class="responsive">
+                        </a>
+                        <div class="text">Scaled Gunung Datuk with the SP Adventurers</div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/cringe.jpg" alt="another image of myself" class="responsive">
+                        </a>
+                        <div class="text">Too tryhard</div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/deepa.jpg" alt="ms deepa" class="responsive">
+                        </a>
+                        <div class="text">My secondary school teacher</div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/taiwan.jpg" alt="ice cream" class="responsive">
+                        </a>
+                        <div class="text">When I was in Taiwan</div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="https://www.instagram.com/definitelynotkeith/" target="_blank">
+                            <img src="images/banquet.jpg" alt="banquet" class="responsive">
+                        </a>
+                        <div class="text">When I was working as a banquet</div>
+                    </div>
+                    <figcaption>Figure 1: Images from my life</figcaption>
                 </figure>
-                <p>Oh ya, and that is my maternal grandfather.</p>
             </div>
         </article>
         <footer>
             <h2>Contact</h2>
             <p>Email: keithteohw@gmail.com</p>
             <p>HP: 96885846</p>
-            <p>Donate: </p>
+            <p>Feel free to donate via PayLah!</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

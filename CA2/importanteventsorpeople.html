@@ -9,48 +9,56 @@
          Author:   Keith Teo Hong Wei
       -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/keithlogo.jpg">
 </head>
 
 <body>
     <figure class="logo">
-        <img src="images/keithlogo.jpg" alt="logo" width="5%">
+        <img src="images/keithlogo.jpg" alt="logo" width="100%">
     </figure>
     <div class="container">
-        <!--<p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>-->
         <header>
             <h1>Keith&#39;s Personal Website</h1>
         </header>
         <nav class="sitenavigation">
             <div class="navigation-menu-button">
-                <img src="images/menu.png" alt="Show navigation">
+                <img src="images/menu.png" alt="Show navigation" width="100%">
             </div>
-            <div>
-                <p>
-                    <a href="index.html">Introduction</a>
-                </p>
-                <p>
-                    <a href="educationalbackground.html">Educational Background</a>
-                </p>
-                <p class="current">
-                    <a href="importanteventsorpeople.html">Important Events/People</a>
-                </p>
-                <p>
-                    <a href="portfolio.html">Portfolio</a>
-                </p>
-            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-fw fa-home"></i> Introduction</a>
+                </li>
+                <li>
+                    <a href="educationalbackground.html">
+                        <i class="fa fa-book"></i> Educational Background</a>
+                </li>
+                <li class="current">
+                    <a href="importanteventsorpeople.html">
+                        <i class="fa fa-user-plus"></i> Important Events/People</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <i class="fa fa-file-text"></i> Portfolio</a>
+                </li>
+                <li>
+                    <a href="signup.html">
+                        <i class="fa fa-fw fa-user"></i> Join our team</a>
+                </li>
+            </ul>
         </nav>
         <article>
             <div class="container">
                 <h2>Important People in my life</h2>
                 <p>My paternal grandmother was a very important person in my early childhood.</p>
                 <p>She used to live with us and helped to do most of the housework and cooking.</p>
-                <figure>
-                    <a href="importanteventsorpeople.html">
-                        <img src="images/grandmother.jpg" alt="grandmother">
+                <figure class="images">
+                    <a href="signup.html">
+                        <img src="images/grandmother.jpg" alt="grandmother" class="responsive">
                     </a>
                     <figcaption>Figure 5: My Grandmother</figcaption>
                 </figure>
@@ -88,10 +96,10 @@
                     to explode with happiness. I just could not help myself but fall in love with her. I just couldn't stop
                     thinking about her. I was able to regain my confidence and get back on my feet.
                 </p>
-                <figure>
+                <figure class="images">
                     <!--link to instagram-->
                     <a href="https://www.instagram.com/shuxiannnn_/" target="_blank">
-                        <img src="images/shuxian.jpg" alt="a girl">
+                        <img src="images/shuxian.jpg" alt="her" class="responsive">
                     </a>
                     <figcaption>Figure 6: Somebody that I used to know</figcaption>
                 </figure>
@@ -109,9 +117,10 @@
             <h2>Contact</h2>
             <p>Email: keithteohw@gmail.com</p>
             <p>HP: 96885846</p>
-            <p>Donate: </p>
+            <p>Feel free to donate via PayLah!</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
