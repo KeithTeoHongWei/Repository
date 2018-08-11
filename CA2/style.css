@@ -26,6 +26,9 @@ body figure{
 body figure.images {
   width: 30%;
 }
+body figure.images:hover {
+  opacity: 0.9;
+}
 .logo{
   width: 4%;
   max-width: 100%;
@@ -95,7 +98,7 @@ nav.sitenavigation a:link {
 nav.sitenavigation a:visited {
    color: #c6e2f1;
 }
-nav.sitenavigation li:hover, .current {
+nav.sitenavigation li:hover, nav.sitenavigation li.current {
    color: rgb(255, 255, 255);
    font-weight: bold;
    background-color: rgb(75, 110, 156);
@@ -109,10 +112,16 @@ nav.sitenavigation li:active {
   font-size: 90%;
 }
 .navigation-menu-button {
-  margin: 0.5% 0 0 1%;
-  float: left;
+  font-size: 120%;
+  margin: 1%;
   cursor: pointer;
   display: none;
+}
+.closebtn {
+  display: none;
+  position: absolute;
+  width: 5%;
+  left: 1%;
 }
 .sticky {
   position: fixed;
@@ -151,8 +160,8 @@ article h3 {
   margin: 1% 0 2% 4%;
 }
 article p {
-   max-width: 60%;
-   margin: 2% 2% 2% 8%;
+  width: 60%;
+   margin: 2% 2% 2% 6%;
    font-size: 150%;
    line-height: 1.2em;
 }
@@ -194,7 +203,7 @@ article figcaption {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(102, 140, 155); 
+  background: rgb(109, 162, 184); 
   border-radius: 10%;
 }
 
@@ -213,18 +222,18 @@ legend {
   font-weight: bold;
 }
 .contactinfo input, textarea {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 159, 159);
   padding: 0.1%;
 }
 .contactinfo input{
   position: absolute;
-  left: 10%;
+  left: 20%;
 }
-#firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-  width: 17%;
+#firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit {
+  width: 30%;
 }
 #phoneinput {
-  width: 12%;
+  width: 15%;
 }
 #submit {
   padding: 0.4% 0.6%;
@@ -296,10 +305,10 @@ footer p{
     font-size: 90%;
  }
  .contactinfo input{
-   left: 15%;
+   left: 30%;
  }
- #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-   width: 20%;
+ #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit {
+   width: 35%;
  }
 }
 @media screen and (max-width: 950px) {
@@ -309,33 +318,56 @@ footer p{
   .logo {
     display: none;
   }
-  nav.sitenavigation {
-    background-color: rgb(31, 52, 109);
-    overflow: auto;
+  .navigation-menu-button {
+    display: block;
+    position: fixed;
+    padding: 0.1%;
+    background-color: rgb(219, 178, 107);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
   }
-  nav.sitenavigation ul {
-    width: auto;
-    text-align: left;
-    padding: 0 0.1%;
- }
-  nav.sitenavigation li {
+  nav.sitenavigation ul{
     display: none;
   }
-  div.navigation-menu-button {
+  nav.sitenavigation.navresponsive {
     display: block;
-    width: 5%;
-    max-width: 100%;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6%;
+    text-align: center;
+    opacity: 0.95;
   }
-  nav.sitenavigation .menuResponsive a {
-    float: none;
+  nav.sitenavigation.navresponsive ul {
     display: block;
+    margin-left: 40%;
+    width: 25%;
   }
-  nav.sitenavigation li.current {
+  nav.sitenavigation.navresponsive ul li {
+    padding: 3%;
+    margin: 4% 0;
+  }
+  nav.sitenavigation.navresponsive ul li a {
+    font-size: 150%;
+    color: #818181;
     display: block;
-    float: left;
-    font-size: 80%;
-    margin: 0.8% 0 0 5%;
+    transition: 0.3s;
+    z-index: 2;
+  }
+  nav.sitenavigation.navresponsive .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 200%;
+  }
+  article {
+    border-top: 1px solid rgb(0, 0, 0);
   }
   article h2 {
     font-size: 150%;
@@ -348,19 +380,19 @@ footer p{
    max-width: 100%;
    height: auto;
   }
-  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-    width: 25%;
+  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit {
+    width: 40%;
   }
   #phoneinput {
-    width: 17%;
+    width: 25%;
   }
 }
 @media screen and (max-width: 730px){
   .contactinfo input{
-    left: 17%;
+    left: 30%;
   }
-  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-    width: 30%;
+  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit  {
+    width: 40%;
   }
   legend{
     font-size: 100%;
@@ -369,7 +401,14 @@ footer p{
     font-size: 90%;
   }
   #phoneinput {
-    width: 20%;
+    width: 30%;
+  }
+  nav.sitenavigation.navresponsive ul {
+    margin-left: 35%;
+    width: 30%;
+  }
+  nav.sitenavigation.navresponsive ul li a {
+    font-size: 150%;
   }
 }
 @media screen and (max-width: 680px){
@@ -377,16 +416,14 @@ footer p{
     padding: 2%;
   }
   header h1 {
-    font-size: 180%;
+    font-size: 170%;
   }
   article h2 {
     font-size: 100%;
   }
   article p {
-    font-size: 60%;
-  }
-  nav.sitenavigation li.current {
-    font-size: 65%;
+    font-size: 100%;
+    width: 70%;
   }
   footer h2 {
     font-size: 60%;
@@ -395,33 +432,36 @@ footer p{
     font-size: 50%;
   }
   .contactinfo input{
-    left: 23%;
+    left: 35%;
   }
-  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-    width: 35%;
+  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit  {
+    width: 45%;
   }
   #phoneinput {
-    width: 30%;
+    width: 35%;
+  }
+  .navigation-menu-button {
+    font-size: 100%;
+  }
+  nav.sitenavigation.navresponsive ul li a {
+    font-size: 110%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   header h1 {
-    font-size: 150%;
+    font-size: 110%;
   }
   footer {
     padding: 1% 20% 1% 100%;
   }
   article h2 {
-    font-size: 60%;
+    font-size: 90%;
   }
   article p {
-    font-size: 40%;
+    font-size: 80%;
   }
   article figure {
     font-size: 30%;
-  }
-  nav.sitenavigation li.current {
-    font-size: 50%;
   }
   footer h2 {
     font-size: 50%;
@@ -430,22 +470,27 @@ footer p{
     font-size: 30%;
   }
   .contactinfo input{
-    left: 30%;
+    left: 45%;
   }
-  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
+  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit  {
     width: 50%;
   }
   legend{
     font-size: 90%;
   }
+  .navigation-menu-button {
+    font-size: 80%;
+  }
+  nav.sitenavigation.navresponsive ul li a {
+    font-size: 80%;
+  }
 }
 @media screen and (max-width: 400px) {
   header h1 {
-    font-size: 100%;
+    font-size: 70%;
   }
-  nav.sitenavigation li.current {
-    margin-top: 1%;
-    font-size: 40%;
+  article p {
+    width: 80%;
   }
   footer {
     padding: 1% 25% 1% 100%;
@@ -457,10 +502,10 @@ footer p{
     font-size: 20%;
   }
   .contactinfo input{
-    left: 30%;
+    left: 45%;
   }
-  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount {
-    width: 60%;
+  #firstname, #lastname, #emailinput, #homeaddress, #bankaccount, #credit {
+    width: 50%;
   }
   legend{
     font-size: 70%;
@@ -473,6 +518,15 @@ footer p{
   }
   .contactinfo input{
     padding: 0.01%;
+  }
+  nav.sitenavigation.navresponsive ul li a {
+    font-size: 65%;
+  }
+  nav.sitenavigation.navresponsive .closebtn {
+    font-size: 100%;
+  }
+  .navigation-menu-button {
+    font-size: 50%;
   }
 }
 @page {

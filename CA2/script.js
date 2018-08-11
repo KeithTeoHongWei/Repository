@@ -47,9 +47,9 @@ function carousel() {
 }
 
 function menu() {
-    var x = document.getElementById("myTopnav");
+    var x = document.querySelector("nav")
     if (x.className === "sitenavigation") {
-        x.className += "menuResponsive";
+        x.className += " navresponsive";
     } else {
         x.className = "sitenavigation";
     }

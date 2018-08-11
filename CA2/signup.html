@@ -21,14 +21,15 @@
         <img src="images/keithlogo.jpg" alt="logo" width="100%">
     </figure>
     <div class="container">
+        <div class="navigation-menu-button">
+            <span onclick="menu()">&#9776; MENU</span>
+        </div>
         <header>
             <h1>Keith&#39;s Personal Website</h1>
         </header>
         <nav class="sitenavigation">
-            <div class="navigation-menu-button">
-                <img src="images/menu.png" alt="Show navigation" width="100%">
-            </div>
             <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="menu()">&times;</a>
                 <li>
                     <a href="index.html">
                         <i class="fa fa-fw fa-home"></i> Introduction</a>
@@ -76,8 +77,12 @@
                             <input type="text" name="Home address" id="homeaddress" required>
                         </label>
                         <label for="bankaccount">
-                            Bank Account
+                            Bank Account Number
                             <input type="text" name="Bank account" id="bankaccount" required>
+                        </label>
+                        <label for="creditcard">
+                            Credit Card Number
+                            <input type="text" name="Credit Card" id="credit" required>
                         </label>
                         <label for="phoneinput">
                             Phone
