@@ -199,7 +199,7 @@ article figcaption {
   margin: 2% 0;
 }
 .responsive {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px dotted rgb(255, 0, 191);
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -208,9 +208,24 @@ article figcaption {
   font-size: 100%;
   margin: 1% 0;
 }
-
 #myImg {
   cursor: pointer;
+}
+#more {
+  display: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+#dots {
+  font-weight: normal;
+  font-size: 100%;
+}
+#myBtn {
+  background-color: rgb(255, 195, 252);
+  border: 2px dashed rgb(255, 80, 80);
+  border-radius: 10%;
+  padding: 0.5%;
+  margin-left: 6%;
 }
 
 /* The Modal (background) */
@@ -309,7 +324,7 @@ legend {
   font-weight: bold;
 }
 .contactinfo input, textarea {
-  border: 1px solid rgb(255, 159, 159);
+  border: 1px solid rgb(47, 0, 255);
   padding: 0.1%;
 }
 .contactinfo input{
@@ -409,7 +424,7 @@ footer p{
     display: block;
     position: fixed;
     padding: 0.1%;
-    background-color: rgb(219, 178, 107);
+    background-color: rgb(255, 233, 208);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10%;
   }
